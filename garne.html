@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pricing Section</title>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        margin: 0;
+        background: radial-gradient(circle at top, #111 0%, #000 60%);
+        color: #fff;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 72px;
+        margin-bottom: 60px;
+        letter-spacing: 2px;
+    }
+
+    .pricing {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 20px;
+        padding: 35px 30px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        transition: transform .3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .card h3 {
+        font-size: 18px;
+        opacity: .8;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .price span {
+        font-size: 18px;
+        opacity: .7;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 30px;
+        text-align: left;
+    }
+
+    ul li {
+        margin-bottom: 14px;
+        opacity: .85;
+    }
+
+    ul li::before {
+        content: "✔";
+        color: #6aff8b;
+        margin-right: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        transition: .3s;
+    }
+
+    .btn-dark {
+        background: #000;
+        color: #fff;
+        border: 1px solid #333;
+    }
+
+    .btn-dark:hover {
+        background: #111;
+    }
+
+    .btn-white {
+        background: #000000;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .btn-white:hover {
+        background: #ddd;
+    }
+
+    .highlight {
+        outline: 2px solid rgba(255,255,255,.2);
+    }
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 48px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>GARNEBOYS LIST ITEM</h1>
+
+    <div class="pricing">
+        <!-- MAKANAN -->
+        <div class="card">
+            <h3>MAKANAN POKOK</h3>
+            <div class="price">BELANJA</div>
+            <ul>
+                <li>nugget 2</li>
+                <li>ayam 4</li>
+                <li>sosis 3</li>
+                <li>beras 1krng</li>
+                <li>tempe 2balok</li>
+            </ul>
+            <button class="btn-dark">Get</button>
+        </div>
+
+        <!-- STANDARD -->
+        <div class="card highlight">
+            <h3>MAKANAN</h3>
+            <div class="price">BUMBU <span></span></div>
+            <ul>
+                <li>saos blibis 1</li>
+                <li>royco 4</li>
+                <li>bon cabe 2</li>
+                <li>blue band 1</li>
+                <li>minyak 1</li>
+                <li>cabe</li>
+                <li>bawang</li>
+                <li>tomat</li>
+                <li>kecap 1</li>
+                <li>bumbu ayam</li>
+                <li>saos barbeque 1</li>
+                <li>jeruk limo</li>
+                <li>tusuk sate </li>
+                <li>kain kukusan</li>
+                <li>arang 4</li>
+                <li>ladaku</li>
+                <li>kertas nasi</li>
+            </ul>
+            <button class="btn-white">Get</button>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="card">
+            <h3>OTHER</h3>
+            <div class="price">NEEDED LUNGS<span></span></div>
+            <ul>
+               <li>bendera</li>
+               <li>stiker</li>
+               <li>rokok aroma 1slop</li>
+            </ul>
+            <button class="btn-dark">Get Started</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
